@@ -1,20 +1,16 @@
 <template>
   <div>
-    <!--
-  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
-  Read the documentation to get started: https://tailwindui.com/documentation
--->
-    <div class="relative bg-gray-900">
+    <div class="relative bg-black">
       <div class="absolute inset-0">
-        <div class="absolute inset-y-0 left-0 w-1/2 bg-gray-900"></div>
+        <div class="absolute inset-y-0 left-0 w-1/2 bg-black"></div>
       </div>
-      <div class="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
+      <div class="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
         <div
-          class="bg-gray-900 py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12"
+          class="px-4 py-16 bg-black sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12"
         >
           <div class="max-w-lg mx-auto">
             <h2
-              class="text-2xl leading-8 font-extrabold tracking-tight text-gray-100 sm:text-3xl sm:leading-9"
+              class="text-2xl font-extrabold leading-8 tracking-tight text-gray-100 sm:text-3xl sm:leading-9"
             >
               Get in touch
             </h2>
@@ -34,7 +30,7 @@
                 <dd class="flex">
                   <!-- Heroicon name: phone -->
                   <svg
-                    class="flex-shrink-0 h-6 w-6 text-gray-400"
+                    class="flex-shrink-0 w-6 h-6 text-gray-400"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -55,7 +51,7 @@
                 <dd class="flex">
                   <!-- Heroicon name: mail -->
                   <svg
-                    class="flex-shrink-0 h-6 w-6 text-gray-400"
+                    class="flex-shrink-0 w-6 h-6 text-gray-400"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -75,7 +71,7 @@
           </div>
         </div>
         <div
-          class="bg-gray-100 py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12"
+          class="px-4 py-16 bg-gray-100 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12"
         >
           <div class="max-w-lg mx-auto lg:max-w-none">
             <form
@@ -97,7 +93,7 @@
                     id="full_name"
                     v-model="formData.userFullname"
                     name="userFullname"
-                    class="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
+                    class="block w-full px-4 py-3 placeholder-gray-500 transition duration-150 ease-in-out form-input"
                     placeholder="Full name"
                   />
                 </div>
@@ -110,7 +106,7 @@
                     v-model="formData.userEmail"
                     name="userEmail"
                     type="email"
-                    class="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
+                    class="block w-full px-4 py-3 placeholder-gray-500 transition duration-150 ease-in-out form-input"
                     placeholder="Email"
                   />
                 </div>
@@ -122,7 +118,7 @@
                     id="phone"
                     v-model="formData.userPhone"
                     name="userPhone"
-                    class="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
+                    class="block w-full px-4 py-3 placeholder-gray-500 transition duration-150 ease-in-out form-input"
                     placeholder="Phone"
                   />
                 </div>
@@ -135,7 +131,7 @@
                     v-model="formData.userMessage"
                     name="userMessage"
                     rows="4"
-                    class="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
+                    class="block w-full px-4 py-3 placeholder-gray-500 transition duration-150 ease-in-out form-input"
                     placeholder="Message"
                   ></textarea>
                 </div>
@@ -144,7 +140,7 @@
                 <span class="inline-flex rounded-md shadow-sm">
                   <button
                     type="submit"
-                    class="inline-flex justify-center py-3 px-6 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
+                    class="inline-flex justify-center px-6 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-gray-900 border border-transparent rounded-md hover:bg-gray-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700"
                   >
                     Submit
                   </button>
@@ -168,8 +164,8 @@ export default {
         userEmail: null,
         userFullname: null,
         userPhone: null,
-        userMessage: null,
-      },
+        userMessage: null
+      }
     }
   },
 
@@ -186,7 +182,7 @@ export default {
 
     handleFormSubmit(e) {
       const axiosConfig = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
       }
 
       axios
@@ -194,7 +190,7 @@ export default {
           location.href,
           this.encode({
             'form-name': e.target.getAttribute('name'),
-            ...this.formData,
+            ...this.formData
           }),
           axiosConfig
         )
@@ -207,7 +203,7 @@ export default {
             </div>
             `)
         )
-    },
-  },
+    }
+  }
 }
 </script>

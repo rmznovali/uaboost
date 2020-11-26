@@ -1,0 +1,32 @@
+{
+  "Contact": {
+    "description": "Auto imported from components/Contact.vue"
+  },
+  "LazyContact": {
+    "description": "Auto imported from components/Contact.vue"
+  },
+  "Features": {
+    "description": "Auto imported from components/Features.vue"
+  },
+  "LazyFeatures": {
+    "description": "Auto imported from components/Features.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Heading": {
+    "description": "Auto imported from components/Heading.vue"
+  },
+  "LazyHeading": {
+    "description": "Auto imported from components/Heading.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "LazyLogo": {
+    "description": "Auto imported from components/Logo.vue"
+  }
+}

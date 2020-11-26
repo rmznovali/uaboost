@@ -1,9 +1,7 @@
 <template>
-  <!--
-  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
-  Read the documentation to get started: https://tailwindui.com/documentation
--->
   <div>
+    <Logo />
+
     <Heading />
     <Contact />
     <Footer />
@@ -11,16 +9,7 @@
 </template>
 
 <script>
-import Contact from '@/components/Contact.vue'
-import Footer from '@/components/Footer.vue'
-import Heading from '@/components/Heading.vue'
-export default {
-  components: {
-    Contact,
-    Footer,
-    Heading,
-  },
-}
+export default {}
 </script>
 
 <style>

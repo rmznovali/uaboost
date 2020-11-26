@@ -1,23 +1,19 @@
 <template>
   <div>
-    <!--
-  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
-  Read the documentation to get started: https://tailwindui.com/documentation
--->
     <div class="py-12 bg-gray-900 md:h-screen">
-      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
         <div class="lg:text-center">
           <p
-            class="text-base leading-6 bg-gradient-to-r from-yellow-400 via-yellow-600 to-red-700 bg-clip-text text-transparent font-semibold tracking-wide uppercase"
+            class="text-base font-semibold leading-6 tracking-wide text-transparent uppercase bg-gradient-to-r from-yellow-400 via-yellow-600 to-red-700 bg-clip-text"
           >
             UABoost Features
           </p>
           <h3
-            class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-100 sm:text-4xl sm:leading-10"
+            class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-100 sm:text-4xl sm:leading-10"
           >
             A better way to solve inefficiency in the Ad Creatives
           </h3>
-          <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-300 lg:mx-auto">
+          <p class="max-w-2xl mt-4 text-xl leading-7 text-gray-300 lg:mx-auto">
             A self-service platform for Mobile Gaming UA Ad Creatives
           </p>
         </div>
@@ -28,11 +24,11 @@
               <div class="flex">
                 <div class="flex-shrink-0">
                   <div
-                    class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-yellow-400 via-yellow-600 to-red-700 text-white"
+                    class="flex items-center justify-center w-12 h-12 text-white rounded-md bg-gradient-to-r from-yellow-400 via-yellow-600 to-red-700"
                   >
                     <!-- Heroicon name: globe-alt -->
                     <svg
-                      class="h-6 w-6"
+                      class="w-6 h-6"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -48,7 +44,7 @@
                   </div>
                 </div>
                 <div class="ml-4">
-                  <h4 class="text-lg leading-6 font-medium text-gray-900">
+                  <h4 class="text-lg font-medium leading-6 text-gray-900">
                     Competitive exchange rates
                   </h4>
                   <p class="mt-2 text-base leading-6 text-gray-500">
@@ -63,11 +59,11 @@
               <div class="flex">
                 <div class="flex-shrink-0">
                   <div
-                    class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-yellow-400 via-yellow-600 to-red-700 text-white"
+                    class="flex items-center justify-center w-12 h-12 text-white rounded-md bg-gradient-to-r from-yellow-400 via-yellow-600 to-red-700"
                   >
                     <!-- Heroicon name: scale -->
                     <svg
-                      class="h-6 w-6"
+                      class="w-6 h-6"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -83,7 +79,7 @@
                   </div>
                 </div>
                 <div class="ml-4">
-                  <h4 class="text-lg leading-6 font-medium text-gray-900">
+                  <h4 class="text-lg font-medium leading-6 text-gray-900">
                     No hidden fees
                   </h4>
                   <p class="mt-2 text-base leading-6 text-gray-500">
