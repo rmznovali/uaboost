@@ -79,7 +79,7 @@
             <h2
               class="text-4xl font-extrabold leading-10 tracking-tight text-gray-100 sm:text-5xl sm:leading-none md:text-6xl"
             >
-              Innovation Based
+              Innovation-based
               <br class="xl:hidden" />
               <span
                 class="text-transparent bg-gradient-to-r from-yellow-400 via-yellow-600 to-red-700 bg-clip-text"
